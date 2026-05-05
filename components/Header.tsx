@@ -16,9 +16,10 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#2F3B4E]/[0.88] text-white backdrop-blur-xl">
-      <div className="section-shell flex h-20 items-center justify-between">
-        <a href="#top" className="flex items-end gap-2.5" aria-label="Resilium Public">
+    <header className="fixed left-0 top-0 z-50 w-full px-3 pt-3 text-white sm:px-5 sm:pt-4">
+      <div className="section-shell">
+        <div className="relative flex h-16 items-center justify-between overflow-hidden rounded-full border border-white/[0.22] bg-[#2F3B4E]/[0.48] px-4 shadow-[0_18px_70px_rgba(10,18,31,0.22)] backdrop-blur-2xl before:pointer-events-none before:absolute before:inset-x-5 before:top-0 before:h-px before:bg-white/45 after:pointer-events-none after:absolute after:inset-0 after:rounded-full after:shadow-[inset_0_1px_0_rgba(255,255,255,0.28),inset_0_-1px_0_rgba(255,255,255,0.08)] sm:h-[72px] sm:px-5">
+          <a href="#top" className="relative z-10 flex items-end gap-2.5" aria-label="Resilium Public">
           <span className="relative block h-10 w-[108px] shrink-0">
             <Image
               src="/logo-resilium-cele-square.png"
@@ -34,19 +35,25 @@ export function Header() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-7 lg:flex" aria-label="Główna nawigacja">
+        <nav
+          className="relative z-10 hidden items-center gap-1 rounded-full border border-white/[0.14] bg-white/[0.08] p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] lg:flex"
+          aria-label="Główna nawigacja"
+        >
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold text-white/[0.76] transition hover:text-white"
+              className="rounded-full px-4 py-2.5 text-sm font-semibold text-white/[0.78] transition hover:bg-white/[0.12] hover:text-white"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <a href="#poptavka" className="btn-primary hidden lg:inline-flex">
+        <a
+          href="#poptavka"
+          className="relative z-10 hidden min-h-11 items-center justify-center rounded-full bg-resilium-orange px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-orange-950/20 transition hover:bg-resilium-orangeHover focus:outline-none focus:ring-4 focus:ring-orange-300/40 lg:inline-flex"
+        >
           Chcę zacząć
         </a>
 
@@ -55,7 +62,7 @@ export function Header() {
           aria-label="Otwórz menu"
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.16] bg-white/[0.08] lg:hidden"
+          className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.18] bg-white/[0.12] shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-xl transition hover:bg-white/[0.18] lg:hidden"
         >
           <span className="relative h-4 w-5">
             <span
@@ -75,17 +82,21 @@ export function Header() {
             />
           </span>
         </button>
+        </div>
       </div>
 
       {open ? (
-        <div className="border-t border-white/10 bg-[#2F3B4E] px-5 py-5 lg:hidden">
-          <nav className="mx-auto flex max-w-[1240px] flex-col gap-1" aria-label="Nawigacja mobilna">
+        <div className="px-3 pt-3 sm:px-5 lg:hidden">
+          <nav
+            className="mx-auto flex max-w-[1240px] flex-col gap-1 rounded-[28px] border border-white/[0.2] bg-[#2F3B4E]/[0.62] p-3 shadow-[0_18px_70px_rgba(10,18,31,0.24),inset_0_1px_0_rgba(255,255,255,0.22)] backdrop-blur-2xl"
+            aria-label="Nawigacja mobilna"
+          >
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-2xl px-4 py-3 text-sm font-bold text-white/[0.82] hover:bg-white/[0.08]"
+                className="rounded-2xl px-4 py-3 text-sm font-bold text-white/[0.84] transition hover:bg-white/[0.12] hover:text-white"
               >
                 {item.label}
               </a>
