@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export function InstructorSection() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-resilium-deep py-24 sm:py-32">
       <div className="section-shell grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="flex justify-center lg:justify-start">
-          <div className="relative aspect-square w-full max-w-[460px] rounded-full border border-resilium-orange/25 bg-gradient-to-br from-resilium-dark to-resilium-slate p-3 shadow-soft">
-            <div className="relative h-full w-full overflow-hidden rounded-full bg-[#D5D0C4]">
+          <div className="relative aspect-square w-full max-w-[460px] rounded-full border border-resilium-orange/25 bg-gradient-to-br from-resilium-dark to-resilium-card p-3 shadow-soft">
+            <div className="relative h-full w-full overflow-hidden rounded-full bg-[#A8B7C5]">
               <Image
                 src="/radim-koncitek.png"
                 alt="Radim Končítek"

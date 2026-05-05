@@ -4,7 +4,7 @@ export function HeroSection() {
       id="top"
       className="dark-grid relative flex min-h-[86vh] items-center overflow-hidden bg-resilium-dark pt-28 text-white"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,122,0,0.26),transparent_30%),linear-gradient(135deg,#2F3B4E_0%,#354258_58%,#44516A_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,#526F83_0%,#587487_58%,#6F8797_100%)]" />
       <div className="absolute right-[-120px] top-28 h-80 w-80 rounded-full border border-white/10" />
       <div className="absolute bottom-16 left-[-80px] h-52 w-52 rounded-full bg-resilium-orange/10 blur-3xl" />
 

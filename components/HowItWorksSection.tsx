@@ -18,12 +18,12 @@ export function HowItWorksSection() {
         />
         <div className="mt-16 grid gap-5 lg:grid-cols-4">
           {steps.map(([title, text], index) => (
-            <article key={title} className="relative rounded-[28px] border border-white/[0.14] bg-white/[0.06] p-7 shadow-dark">
+            <article key={title} className="relative rounded-[28px] border border-[#E5EAF0] bg-resilium-card p-7 shadow-soft">
               <div className="mb-10 flex h-12 w-12 items-center justify-center rounded-full bg-resilium-orange text-sm font-black text-white">
                 {index + 1}
               </div>
-              <h3 className="text-2xl font-black">{title}</h3>
-              <p className="mt-4 leading-7 text-white/[0.72]">{text}</p>
+              <h3 className="text-2xl font-black text-resilium-ink">{title}</h3>
+              <p className="mt-4 leading-7 text-resilium-muted">{text}</p>
             </article>
           ))}
         </div>

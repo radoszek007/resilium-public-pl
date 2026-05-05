@@ -13,12 +13,12 @@ const outcomes = [
 
 export function OutcomesSection() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-resilium-deep py-24 sm:py-32">
       <div className="section-shell">
         <SectionHeading title="Co wyniesiesz z treningu" />
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           {outcomes.map((item) => (
-            <div key={item} className="flex items-start gap-4 rounded-2xl border border-[#D9DEE8] bg-resilium-light p-5">
+            <div key={item} className="flex items-start gap-4 rounded-2xl border border-[#E5EAF0] bg-resilium-card p-5">
               <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-resilium-orange text-xs font-black text-white">
                 ✓
               </span>

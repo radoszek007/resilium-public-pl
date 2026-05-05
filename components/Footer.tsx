@@ -10,7 +10,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#263143] py-12 text-white">
+    <footer className="bg-[#3F5870] py-12 text-white">
       <div className="section-shell">
         <div className="grid gap-10 border-b border-white/[0.12] pb-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div>

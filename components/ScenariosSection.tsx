@@ -16,7 +16,7 @@ export function ScenariosSection() {
         <SectionHeading title="Gdzie wykorzystasz Resilium" />
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {scenarios.map(([title, text]) => (
-            <article key={title} className="rounded-[26px] border border-[#D9DEE8] bg-white p-7">
+            <article key={title} className="rounded-[26px] border border-[#E5EAF0] bg-resilium-card p-7">
               <h3 className="text-xl font-black text-resilium-ink">{title}</h3>
               <p className="mt-4 leading-7 text-resilium-muted">{text}</p>
             </article>

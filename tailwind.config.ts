@@ -9,22 +9,23 @@ const config: Config = {
     extend: {
       colors: {
         resilium: {
-          dark: "#2F3B4E",
-          deep: "#354258",
-          slate: "#44516A",
-          light: "#F5F6F8",
-          ink: "#303A4D",
-          muted: "#5E6677",
-          orange: "#FF7A00",
-          orangeHover: "#E86F00"
+          dark: "#526F83",
+          deep: "#F8FAFC",
+          slate: "#F5F7FA",
+          light: "#F8FAFC",
+          card: "#FFFFFF",
+          ink: "#3F5870",
+          muted: "#7C8FA1",
+          orange: "#F4A640",
+          orangeHover: "#FFAA3D"
         }
       },
       fontFamily: {
         sans: ["Montserrat", "Inter", "Poppins", "Arial", "sans-serif"]
       },
       boxShadow: {
-        soft: "0 18px 60px rgba(31, 42, 59, 0.12)",
-        dark: "0 22px 80px rgba(10, 18, 31, 0.22)"
+        soft: "0 18px 50px rgba(63, 88, 112, 0.12)",
+        dark: "0 22px 70px rgba(63, 88, 112, 0.18)"
       }
     }
   },

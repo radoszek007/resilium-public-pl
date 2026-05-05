@@ -39,7 +39,7 @@ export function WhySection() {
         </div>
         <div className="mt-14 grid gap-5 md:grid-cols-3">
           {cards.map((card) => (
-            <article key={card.title} className="rounded-[28px] border border-[#D9DEE8] bg-white p-7 shadow-soft">
+            <article key={card.title} className="rounded-[28px] border border-[#E5EAF0] bg-resilium-card p-7 shadow-soft">
               <Icon>{card.icon}</Icon>
               <h3 className="mt-8 text-xl font-black text-resilium-ink">{card.title}</h3>
               <p className="mt-4 leading-7 text-resilium-muted">{card.text}</p>

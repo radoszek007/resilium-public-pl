@@ -13,8 +13,8 @@
 
 body {
   margin: 0;
-  background: #f5f6f8;
-  color: #303a4d;
+  background: #f8fafc;
+  color: #435e73;
 }
 
 a {
@@ -30,7 +30,7 @@ select {
 }
 
 ::selection {
-  background: rgba(255, 122, 0, 0.28);
+  background: rgba(244, 166, 64, 0.32);
 }
 
 .section-shell {
@@ -38,7 +38,7 @@ select {
 }
 
 .btn-primary {
-  @apply inline-flex min-h-12 items-center justify-center rounded-full bg-resilium-orange px-6 py-3 text-sm font-bold text-white shadow-lg shadow-orange-950/20 transition hover:bg-resilium-orangeHover focus:outline-none focus:ring-4 focus:ring-orange-300/40;
+  @apply inline-flex min-h-12 items-center justify-center rounded-full bg-resilium-orange px-6 py-3 text-sm font-bold text-white shadow-lg shadow-orange-900/15 transition hover:bg-resilium-orangeHover focus:outline-none focus:ring-4 focus:ring-resilium-orange/30;
 }
 
 .btn-secondary-dark {
@@ -46,7 +46,7 @@ select {
 }
 
 .btn-secondary-light {
-  @apply inline-flex min-h-12 items-center justify-center rounded-full border border-resilium-ink/15 px-6 py-3 text-sm font-bold text-resilium-ink transition hover:border-resilium-orange hover:text-resilium-orange focus:outline-none focus:ring-4 focus:ring-orange-200;
+  @apply inline-flex min-h-12 items-center justify-center rounded-full border border-[#E5EAF0] px-6 py-3 text-sm font-bold text-resilium-ink transition hover:border-resilium-orange hover:text-resilium-orange focus:outline-none focus:ring-4 focus:ring-resilium-orange/25;
 }
 
 .dark-grid {

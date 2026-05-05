@@ -29,21 +29,21 @@ const programs = [
 
 export function ProgramsSection() {
   return (
-    <section id="programy" className="bg-resilium-deep py-24 text-white sm:py-32">
+    <section id="programy" className="bg-resilium-deep py-24 text-resilium-ink sm:py-32">
       <div className="section-shell">
-        <SectionHeading dark align="center" title="Wybierz wejście do systemu Resilium" />
+        <SectionHeading align="center" title="Wybierz wejście do systemu Resilium" />
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {programs.map((program) => (
-            <article key={program.name} className="flex h-full flex-col rounded-[30px] border border-white/[0.14] bg-white/[0.07] p-7 shadow-dark">
-              <div className="mb-6 inline-flex w-fit rounded-full border border-white/[0.14] px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-white/[0.72]">
+            <article key={program.name} className="flex h-full flex-col rounded-[30px] border border-[#E5EAF0] bg-resilium-card p-7 shadow-soft">
+              <div className="mb-6 inline-flex w-fit rounded-full border border-[#E5EAF0] bg-resilium-slate px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-resilium-muted">
                 {program.length}
               </div>
               <h3 className="text-2xl font-black">{program.name}</h3>
               <p className="mt-2 font-bold text-resilium-orange">{program.subtitle}</p>
               <div className="flex flex-1 flex-col">
-                <p className="mt-6 leading-7 text-white/[0.74]">{program.text}</p>
-                <p className="mt-6 rounded-2xl border border-white/[0.12] bg-black/10 p-4 text-sm leading-7 text-white/[0.78]">
-                  <span className="font-black text-white">Efekt: </span>
+                <p className="mt-6 leading-7 text-resilium-muted">{program.text}</p>
+                <p className="mt-6 rounded-2xl border border-[#E5EAF0] bg-resilium-slate p-4 text-sm leading-7 text-resilium-muted">
+                  <span className="font-black text-resilium-ink">Efekt: </span>
                   {program.output}
                 </p>
               </div>

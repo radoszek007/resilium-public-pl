@@ -26,24 +26,24 @@ export function ContactSection() {
 
           <form
             id="contact-form"
-            className="rounded-[30px] border border-white/[0.14] bg-white/[0.07] p-6 shadow-dark sm:p-8"
+            className="rounded-[30px] border border-[#E5EAF0] bg-resilium-card p-6 shadow-soft sm:p-8"
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block">
                 <span className="mb-2 block text-sm font-bold text-white/[0.78]">Imię i nazwisko</span>
-                <input className="w-full rounded-2xl border border-white/[0.14] bg-white/95 px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange" />
+                <input className="w-full rounded-2xl border border-[#E5EAF0] bg-resilium-slate px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange" />
               </label>
               <label className="block">
                 <span className="mb-2 block text-sm font-bold text-white/[0.78]">E-mail</span>
-                <input type="email" className="w-full rounded-2xl border border-white/[0.14] bg-white/95 px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange" />
+                <input type="email" className="w-full rounded-2xl border border-[#E5EAF0] bg-resilium-slate px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange" />
               </label>
               <label className="block">
                 <span className="mb-2 block text-sm font-bold text-white/[0.78]">Telefon</span>
-                <input type="tel" className="w-full rounded-2xl border border-white/[0.14] bg-white/95 px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange" />
+                <input type="tel" className="w-full rounded-2xl border border-[#E5EAF0] bg-resilium-slate px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange" />
               </label>
               <label className="block">
                 <span className="mb-2 block text-sm font-bold text-white/[0.78]">Program</span>
-                <select className="w-full rounded-2xl border border-white/[0.14] bg-white/95 px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange">
+                <select className="w-full rounded-2xl border border-[#E5EAF0] bg-resilium-slate px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange">
                   <option>Resilium Intro</option>
                   <option>Resilium Foundations</option>
                   <option>Resilium Life Practice</option>
@@ -53,7 +53,7 @@ export function ContactSection() {
             </div>
             <label className="mt-5 block">
               <span className="mb-2 block text-sm font-bold text-white/[0.78]">Wiadomość</span>
-              <textarea rows={5} className="w-full resize-none rounded-2xl border border-white/[0.14] bg-white/95 px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange" />
+              <textarea rows={5} className="w-full resize-none rounded-2xl border border-[#E5EAF0] bg-resilium-slate px-4 py-3 text-resilium-ink outline-none focus:border-resilium-orange" />
             </label>
             <button type="button" className="btn-primary mt-6 w-full">
               Wyślij zapytanie
